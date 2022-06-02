@@ -1,6 +1,6 @@
 <div id="app">
-  <h1>Asynchronous JavaScript</h1>
-  <h2>Promise</h2>
+  <h1>Asynchronous JavaScript - Promise</h1>
+  <h2>Promise - Part I</h2>
   <ul>
     <li>
       <table>
@@ -78,27 +78,106 @@
             table or cooking pasta.
           </td>
         </tr>
-        <tr>
-          <td></td>
-          <td></td>
-        </tr>
       </table>
     </li>
-    <li>A promise is simply an object in JavaScript.</li>
+    <li><h4>A promise is simply an object in JavaScript.</h4></li>
     <li>
-      A promise is always in one of the three states.
+      <h4>A promise is always in one of the three states.</h4>
       <ol>
         <li>
-          <em>pending:</em>which is initial state, neither fulfilled nor
-          rejected.
+          <strong><em>pending:</em></strong> is initial state, neither fulfilled
+          nor rejected.
         </li>
         <li>
-          <em>fulfilled:</em> meaning that the operation completed successfully.
+          <strong><em>fulfilled:</em></strong> meaning that the operation
+          completed successfully.
         </li>
-        <li><em>rejected:</em> meaning that the operation failed.</li>
+        <li>
+          <strong><em>rejected:</em></strong> meaning that the operation failed.
+        </li>
+      </ol>
+    </li>
+    <li>
+      <h4>
+        Why do we need <strong><em>'Promise'</em></strong
+        >?
+      </h4>
+      <ol>
+        <li>
+          Promises help us deal with asynchronous code in a far more simpler way
+          compared to callbacks.
+        </li>
+        <li>Callback hell can be avoided with Promises.</li>
+      </ol>
+    </li>
+    <li>
+      <h4>How to work with Promises?</h4>
+      <ol>
+        <li>How to create a Promise?</li>
+        <li>How to fulfill or reject the Promise?</li>
+        <li>
+          How to execute callback functions based on whether the Promise is
+          fulfilled or rejected?
+        </li>
+        <li>
+          When Promise status is changed from pending to fulfilled,
+          <em>then()</em> is executed.
+        </li>
+        <li>
+          When Promise status is changed from pending to rejected,
+          <em>catch()</em> is executed.
+        </li>
       </ol>
     </li>
   </ul>
+  <h2>Promise - Part II</h2>
+  <ol style="list-style-type: lower-alpha">
+    <li>
+      <h3><em>.then()</em> function</h3>
+    </li>
+    <li><h3>Chaining Promises</h3></li>
+    <li>
+      <h3>Promise Static Methods</h3>
+      <h4><em>Promise.all()</em></h4>
+      <ol>
+        <li>
+          <em>Promise.all()</em>: Query multiple APIs and perform some actions
+          but only after all the APIs have finished loading.
+        </li>
+        <li>
+          The <em>Promise.all()</em> method takes an iterable of promises as an
+          input and returns a single Promise that resolves to an array of the
+          results of the input promises.
+        </li>
+        <li>
+          Returned promise will resolve when all of the input's promises have
+          resolved, or if the input iterable contains no promises.
+        </li>
+        <li>
+          It rejects immediately if any of the input promises reject or the
+          non-promise throw an error, and will reject with this first rejection
+          message/error.
+        </li>
+      </ol>
+      <h4><em>Promise.allSettled()</em></h4>
+      <ol>
+        <li>
+          <em>Promise.allSettled()</em> waits for all input promises to complete
+          regardless of whether or not one of them is rejected.
+        </li>
+      </ol>
+      <h4><em>Promise.race()</em></h4>
+      <ol>
+        <li>
+          <em>Promise.race()</em> method returns a promise that fulfills or
+          rejects as soon as one of the input promises fulfills or rejects, with
+          the value or reason from that promise.
+        </li>
+      </ol>
+    </li>
+    <li></li>
+    <li></li>
+  </ol>
   <p>
     <a href="https://www.youtube.com/watch?v=exBgWAIeIeg">
       Asynchronous JavaScript Crash Course 2022 by Codevolution</a
