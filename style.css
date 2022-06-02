@@ -1,3 +1,25 @@
-h1, h2 {
+h1,
+h2 {
   font-family: Lato;
+}
+
+table {
+  background-color: lightyellow;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #8ebf42;
+}
+
+#summary-2 {
+  background-color: lightcyan;
+}
+
+th {
+  border: 1px solid #095484;
+}
+
+td {
+  padding: 5px;
+  border: 1px solid lightgray;
+  border-collapse: collapse;
 }

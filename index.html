@@ -2,11 +2,102 @@
   <h1>Asynchronous JavaScript</h1>
   <h2>Promise</h2>
   <ul>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
+    <li>
+      <table>
+        <tr>
+          <th>Dinner Scenario</th>
+          <th>JavaScript</th>
+        </tr>
+        <tr>
+          <td>Your friend</td>
+          <td>Promise</td>
+        </tr>
+        <tr>
+          <td>
+            While your friend is on his way to the food truck, you know that it
+            could take a while and you don't want to sit idle. So you start
+            preparing soup in the meantime.
+          </td>
+          <td>Asynchronous operation in JavaScript (<em>fetchTacos</em>)</td>
+        </tr>
+        <tr>
+          <td>
+            When your friend text's you with "Can get tacos/Can't get tacos", it
+            answers your question on whether he is getting the taco or not.
+          </td>
+          <td>Promise return value.</td>
+        </tr>
+        <tr>
+          <td>Can get tacos</td>
+          <td>Promise is said to be fulfilled.</td>
+        </tr>
+        <tr>
+          <td>Cannot get tacos</td>
+          <td>Promise is said to be rejected.</td>
+        </tr>
+        <tr>
+          <td>Set up the table</td>
+          <td>Success calback</td>
+        </tr>
+        <tr>
+          <td>Cook pasta</td>
+          <td>Failure callback</td>
+        </tr>
+      </table>
+    </li>
+    <li>
+      <strong>MDN definition of Promise</strong>- A promise is a proxy for a
+      value not necessarily known when the promise is created. It allows you to
+      associate handlers with an asynchronous action's eventual success value or
+      failure reason.
+    </li>
+    <li>
+      <table id="summary-2">
+        <tr>
+          <th>JavaScript</th>
+          <th>Dinner Scenario</th>
+        </tr>
+        <tr>
+          <td>A promise is a proxy for a value</td>
+          <td>Can or cannot get tacos.</td>
+        </tr>
+        <tr>
+          <td>Not necessarily known when the promise is created.</td>
+          <td>
+            You don't know if he can/can't get tacos when he made his promise.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Allows you to associate handlers with an asynchronous action's
+            eventual success value or failure reason.
+          </td>
+          <td>
+            Decide ahead of time what has to be done when the promise is
+            eventually fulfilled or rejected. That is either setting up the
+            table or cooking pasta.
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </li>
+    <li>A promise is simply an object in JavaScript.</li>
+    <li>
+      A promise is always in one of the three states.
+      <ol>
+        <li>
+          <em>pending:</em>which is initial state, neither fulfilled nor
+          rejected.
+        </li>
+        <li>
+          <em>fulfilled:</em> meaning that the operation completed successfully.
+        </li>
+        <li><em>rejected:</em> meaning that the operation failed.</li>
+      </ol>
+    </li>
   </ul>
   <p>
     <a href="https://www.youtube.com/watch?v=exBgWAIeIeg">
