@@ -109,3 +109,49 @@ Promise.race([promise12, promise32]).then((value) => {
 
 //expedted output:
 //two
+
+// ************************************************
+// **************** async-await *******************
+// ************************************************
+
+
+// ************** async ******************
+// ----------------------------------------
+
+async function greet() {
+  return 'This is first Hello';
+}
+
+console.log(greet());
+// Promise {<fulfilled>: 'Hello'}
+// Promise {}
+// __proto__: Promise
+
+async function myGreet() {
+  return Promise.resolve('I said Hello');
+}
+
+console.log(myGreet());
+// Promise {}
+// __proto__: Promise
+// I said Hello
+
+myGreet().then((value) => console.log(value));
+//Hello
+
+// ************** await ******************
+// ----------------------------------------
+
+async function sayGreet(){
+  let promise = new Promise((resolve, reject)=>{
+    setTimeout(()=>resolve('Say Hello!'), 1000)
+  })
+
+  let result = await promise; //wait until the promise resolves 
+
+  console.log(result);
+}
+
+console.log(sayGreet());
+// Say Hello!
+
