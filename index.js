@@ -114,7 +114,6 @@ Promise.race([promise12, promise32]).then((value) => {
 // **************** async-await *******************
 // ************************************************
 
-
 // ************** async ******************
 // ----------------------------------------
 
@@ -142,12 +141,12 @@ myGreet().then((value) => console.log(value));
 // ************** await ******************
 // ----------------------------------------
 
-async function sayGreet(){
-  let promise = new Promise((resolve, reject)=>{
-    setTimeout(()=>resolve('Say Hello!'), 1000)
-  })
+async function sayGreet() {
+  let promise = new Promise((resolve, reject) => {
+    setTimeout(() => resolve('Say Hello!'), 1000);
+  });
 
-  let result = await promise; //wait until the promise resolves 
+  let result = await promise; //wait until the promise resolves
 
   console.log(result);
 }
@@ -155,3 +154,6 @@ async function sayGreet(){
 console.log(sayGreet());
 // Say Hello!
 
+// ************************************************
+// **************** Event - Loop *******************
+// ************************************************
